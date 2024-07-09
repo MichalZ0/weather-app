@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 115.07 73.01"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="rain.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="5.27505"
+     inkscape:cx="57.535"
+     inkscape:cy="36.492545"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1-2" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#aac7d5;}.cls-2{fill:#cae3f6;}.cls-3,.cls-4{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.cls-4{stroke-linecap:round;}</style>
+  </defs>
+  <title
+     id="title1">rainAsset 184colored</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1">
+      <path
+         class="cls-1"
+         d="M76.77,49.06a1.32,1.32,0,0,1,.77-.46,24.92,24.92,0,0,0,11.14-4.1c6.44,4.75,11.95,5.4,17.45,2.13,4.78-2.85,7.7-8.5,6.76-13.85-1.38-8-6.52-12-14.43-12.57C95.82,10.36,89.79,3.79,79.75,2,68-.11,59.45,5,53.73,15.23"
+         id="path1" />
+      <path
+         class="cls-2"
+         d="M63.32,28.88H63a24,24,0,0,0-47,.87l-.87,0a13.89,13.89,0,0,0-5.53,1.6A14.38,14.38,0,0,0,7.2,33c-.4.33-.79.67-1.17,1A10.11,10.11,0,0,0,4,36.51,13.24,13.24,0,0,0,2.84,38.9C.28,46.85,4,52.81,8.23,55.66s11.5,4,17.85-1.57a24,24,0,0,0,27,0A14.67,14.67,0,1,0,63.32,28.88Z"
+         id="path2" />
+      <path
+         class="cls-3"
+         d="M76.77,49.53a1.32,1.32,0,0,1,.77-.46A24.92,24.92,0,0,0,88.68,45c6.44,4.75,11.95,5.4,17.45,2.13,4.78-2.85,7.7-8.5,6.76-13.85-1.38-8-6.52-12-14.43-12.57C95.82,10.83,89.79,4.26,79.75,2.46,68,.36,59.45,5.51,53.73,15.7"
+         id="path3" />
+      <path
+         class="cls-3"
+         d="M63.32,29.35H63a24,24,0,0,0-47,.87l-.87,0a13.89,13.89,0,0,0-5.53,1.6A14.38,14.38,0,0,0,7.2,33.43c-.4.33-.79.67-1.17,1A10.11,10.11,0,0,0,4,37a13.24,13.24,0,0,0-1.13,2.39C.28,47.32,4,53.28,8.23,56.13s11.5,4,17.85-1.57a24,24,0,0,0,27,0A14.67,14.67,0,1,0,63.32,29.35Z"
+         id="path4" />
+      <line
+         class="cls-4"
+         x1="85.91"
+         y1="64.74"
+         x2="85.91"
+         y2="71.01"
+         id="line4"
+         style="fill:#cae3f6;stroke-width:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1;fill-opacity:1" />
+      <line
+         class="cls-4"
+         x1="60.08"
+         y1="64.74"
+         x2="60.08"
+         y2="71.01"
+         id="line5"
+         style="fill:#cae3f6;stroke:#ffffff;stroke-opacity:1;fill-opacity:1" />
+      <line
+         class="cls-4"
+         x1="34.25"
+         y1="64.74"
+         x2="34.25"
+         y2="71.01"
+         id="line6"
+         style="stroke:#cae3f6;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather app</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class='weather-app'>
+		<div class='wrapper'>
+			<section class='left'>
+
+				<div class='searchbar'>
+					<img src='./icons/pin.svg' onclick='currentLocationWeather()' class='pin'
+						alt='Use current location for weather results' />
+					<div class='input' contenteditable='true'></div>
+					<div class='reference input'>0<br>0<br>0</div>
+					<div class='autocomplete-wrapper'>
+						<div class='autocomplete'>
+							<a class='link'>one</a>
+							<a class='link'>two</a>
+						</div>
+					</div>
+				</div>
+				<div class='wrapper'>
+					<div class='realtime'>
+						<!-- <img src='./background.png' /> -->
+						<div class='weather-info'>
+							<p class='weather inline'>
+								<span class='temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+
+							<p class='weather-description'>
+								Rainy Day
+							</p>
+
+							<p class='precise-description'>This is
+								example text. It has to be
+								changed automatically acordingly
+								to your current / or destined
+								location.
+							</p>
+						</div>
+
+
+						<div class='realtime-container'>
+							<section class='panel feels-like'>
+
+								<div class='panel-wrapper'>
+
+									<div class='center'>
+										<img src='./icons/thermometer_temprature.svg'
+											class='icon'></img>
+
+										<p class='panel-title'>
+											FEELS
+											LIKE
+										</p>
+									</div>
+
+									<p class='inline value'>
+										<span class='realtime-value'>0</span>
+										<span class='metric'>&#176;</span>
+									</p>
+								</div>
+								<p class='realtime-desc'>something something</p>
+							</section>
+
+							<section class='panel precipitation'>
+								<div class='panel-wrapper'>
+
+									<div class='center'>
+										<img src='./icons/rain_drop.svg'
+											class='icon'></img>
+										<p class='panel-title'>
+											PRECIPITATION
+										</p>
+									</div>
+
+									<p class='inline value'>
+										<span
+											class='precipitation-value'>0</span>
+										<span class='metric'>"</span>
+									</p>
+									<p class='precipitation-time'>in last 24
+										hours
+									</p>
+								</div>
+								<div class='precipitation-desc'>
+									<p class='inline desc'>
+										<span
+											class='precipitation-expected-value'>0</span>
+										<span class='metric'>" </span>
+										<span>expected in next 24
+											hours</span>
+									</p>
+								</div>
+							</section>
+
+							<section class='panel visibility'>
+								<div class='panel-wrapper'>
+
+									<div class='center'>
+										<img src='./icons/visibility.svg'
+											class='icon'></img>
+										<p class='panel-title'>
+											VISIBILITY
+										</p>
+									</div>
+
+
+									<p class='inline value'>
+										<span class='visibility-value'>0
+											mi</span>
+										<span class='metric'>mi</span>
+									</p>
+								</div>
+							</section>
+
+							<section class='panel humidity'>
+								<div class='panel-wrapper'>
+									<div class='center'>
+										<img src='./icons/humidity.svg'
+											class='icon'></img>
+										<p class='panel-title'>
+											HUMIDITY
+										</p>
+									</div>
+									<p class='inline value'>
+										<span class='humidity-value'>0%</span>
+										<span class='metric'>%</span>
+									</p>
+								</div>
+
+								<div class='humidity-desc'>
+									<p class='dew-desc desc'><span>The dew
+											point
+											is</span>
+									</p>
+									<p class='inline desc'>
+										<span class='dew-value'>xx</span>
+										<span class='metric'>&#176;
+										</span>
+										<span>right now</span>
+									</p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class='right'>
+				<section class='panel hourly-forecast'>
+
+					<p class='panel-title'><img src='./icons/clock.svg' class='icon' />HOURLY
+						FORECAST</p>
+					<div class='underline'></div>
+					<div class='forecast-container'>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<p class='weather-time'>Now</p>
+							<p class='inline forecast-value'>
+								<span class='temperature'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+					</div>
+				</section>
+
+
+				<section class='panel forecast'>
+					<p class='panel-title'><img src='./icons/calendar.svg' class='icon' />10-DAY
+						FORECAST
+					</p>
+					<div class='underline'></div>
+					<div class='forecast-container'>
+						<div class='panel'>
+
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span> <span
+									class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+						<div class='panel'>
+							<div>
+								<p class='time'>Today</p>
+								<p class='date'>01/01</p>
+							</div>
+							<p class='inline forecast-value'>
+								<span class='forecast-temp'>0</span>
+								<span class='metric'>&#176;</span>
+							</p>
+							<img src='./icons/weather/rain.svg' class='icon' />
+						</div>
+					</div>
+				</section>
+
+				<section class='panel uv-index'>
+					<p class='panel-title'><img src='./icons/thermometer_temprature.svg'
+							class='icon' />UV
+						INDEX</p>
+					<p class='uv-value value'>0</p>
+					<p class='uv-desc'>None</p>
+					<div class='visualizer'>
+						<img src='./icons/hunt-effect.png' class='hunt' />
+					</div>
+
+					<p class='uv-tip'>Use sun protection until xx</p>
+				</section>
+
+				<section class='panel wind'>
+
+					<div class='wrapper'>
+
+						<div class='container'>
+							<p class='panel-title'><img src='./icons/wind.svg'
+									class='icon' />WIND
+							</p>
+							<div class='wind-container'>
+								<p class='wind-value'>0</p>
+								<div>
+									<p>MPH</p>
+									<p>Wind</p>
+								</div>
+							</div>
+
+							<div class='underline'></div>
+
+							<div class='wind-container'>
+								<p class='gust-value'>0</p>
+								<div>
+									<p>MPH</p>
+									<p>Gusts</p>
+								</div>
+							</div>
+						</div>
+
+						<div class='compass-container'>
+							<img class='compass' src='./icons/compass.svg'
+								alt='compass showing wind direction' />
+							<img class='needle' src='./icons/needle.svg'
+								alt='needle showing wind direction on compass' />
+						</div>
+				</section>
+
+			</section>
+
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+	<script src="script.js"></script>
+
+	<!-- <script src="test.js"></script> -->
+
+
+</body>
+
+</html>
