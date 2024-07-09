@@ -1,6 +1,7 @@
 var controller = new AbortController();
 var signal = controller.signal;
-var serverAddress = "http://127.0.0.1:3000";
+var localServerAddress = "http://127.0.0.1:3000";
+var serverAddress = "https://weather-app-8ckc.onrender.com";
 
 var inputFieldHeight = parseFloat(
 	getComputedStyle(document.getElementsByClassName("input").item(0)).height,
