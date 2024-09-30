@@ -11,4 +11,7 @@
   "dependencies": {
     "dotenv": "^16.4.5"
   }
+  "engines": {
+  "node": ">=17.9.1 <=18.16.0"
+	}
 }
