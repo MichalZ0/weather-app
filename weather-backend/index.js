@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
 	res.setHeader("Access-Control-Allow-Origin", "*");
 
 	var reqURL = new URL(req.url, "http://" + req.headers.host + req.url);
-
+	
 	var fetchURL = "";
 	switch (reqURL.pathname) {
 		case "/reverse":
@@ -50,11 +50,13 @@ const server = http.createServer((req, res) => {
 			break;
 	}
 
+	if (fetchURL != "") {
 	fetch(fetchURL)
 		.then((response) => response.text())
 		.then((data) => {
 			res.end(data);
 		});
+	}
 });
 
 server.listen(process.env.PORT, process.env.HOSTNAME, () => {
